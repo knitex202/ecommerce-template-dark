@@ -24,7 +24,8 @@ const Footer = () => {
     return ( 
         <footer className="mt-16 bg-slate-900 ">
             <Container>
-                <div className="flex flex-col md:flex-row mt-12 mb-6">
+                <div className="flex flex-col items-center mb-6">
+                <div className="flex flex-col md:flex-row mt-12">
             <FooterList>
                 <h2 className="content-none">SHOP CATEGORY</h2>
                 <Hline/>
@@ -80,6 +81,10 @@ const Footer = () => {
                 </div>
             </FooterList>
             <div>      
+            </div>
+            </div>
+            <div>
+            <p className="text-slate-400">&copy; { new Date().getFullYear() } Scheming Animations, All Rights Reserved</p>
             </div>
             </div>
             </Container>
