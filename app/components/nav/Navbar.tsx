@@ -3,6 +3,7 @@
 import { AiFillShopping, AiOutlineShopping } from "react-icons/ai";
 import Container from "../Container";
 import { useEffect} from "react";
+import Link from "next/link";
 
 const Navbar = () => {
   const navScroll = () => {
@@ -29,7 +30,7 @@ const Navbar = () => {
       className="sticky top-0 w-full z-30 shadow-sm transition ease-in-out duration-500"
     >
       <Container>
-        <div className="flex items-center justify-between py-4">
+        <div className="flex items-center justify-between gap-0 md:gap-0 py-4">
           <div>
             <a className="flex group gap-1" href="#">
               <p className="text-white group-hover:text-orange-700 duration-700">
@@ -40,6 +41,7 @@ const Navbar = () => {
               </span>
             </a>
           </div>
+          <div>
           <ul className="flex gap-8 items-center">
             <li className="group">
               <a href="#">Shop</a>
@@ -50,9 +52,12 @@ const Navbar = () => {
               <div className="w-0 h-[2px] bg-orange-600 rounded-full group-hover:w-full duration-500" />
             </li>
             <li>
-              <AiOutlineShopping size={24} />
+              <Link href="/cart"><AiOutlineShopping size={24}/></Link>
+              
             </li>
+            <li className="ml-8"><button className="px-3 py-1 hover:text-orange-600 duration-500 ">Login</button></li>
           </ul>
+          </div>
         </div>
       </Container>
     </div>

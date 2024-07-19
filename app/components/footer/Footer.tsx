@@ -74,8 +74,8 @@ const Footer = () => {
                     <h2>Follow Us</h2>
                     <Hline/>
                     <div className="flex gap-2 text-slate-600">
-                        <Link href="https://www.x.com" passHref={true} target="blank" ><AiFillTwitterCircle size={24}/></Link> 
-                        <Link href="https://www.instagram.com" passHref={true} target="blank"><AiFillInstagram size={24}/></Link>
+                        <Link href="https://www.x.com" passHref={true} target="blank" ><AiFillTwitterCircle size={30}/></Link> 
+                        <Link href="https://www.instagram.com" passHref={true} target="blank"><AiFillInstagram size={30}/></Link>
                     
                     </div>
                 </div>

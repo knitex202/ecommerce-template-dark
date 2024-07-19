@@ -6,7 +6,7 @@ interface ContainerProps {
 
 const Container = memo(function Container({children}:ContainerProps) {
     return ( 
-        <div className="max-w-[1920px] mx-auto md:px-4 xl:px-20">
+        <div className="max-w-[1920px] mx-auto px-4 md:px-8 xl:px-20">
             {children}
         </div>
      );

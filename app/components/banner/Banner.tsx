@@ -4,9 +4,9 @@ import { setInterval } from "timers";
 
 const Banner = () => {
   return (
-    <div className="w-full h-screen bg-slate-950">
+    <div className="h-screen bg-slate-950">
       <Container>
-        <div className="pt-[10%] flex flex-col md:flex-row items-center justify-center ">
+        <div className="pt-[10%] flex flex-col md:flex-row items-center justify-between gap-0 md:gap-12 ">
           <div className="w-64 md:w-[600px] text-3xl md:text-4xl lg:text-6xl font-bold">
             <h1>
               Level Up Your gaming as you Upgrade for Your{" "}
@@ -14,7 +14,7 @@ const Banner = () => {
                 Stream
               </span>
             </h1>
-          <div className="flex flex-col md:flex-row w-96 justify-between">
+          <div className="flex flex-col md:flex-row justify-between">
             <button className="bg-sky-700 hover:bg-sky-900 rounded-xl text-base md:text-xl lg:text-2xl text-white px-4 py-4 mt-4 transition ease-in-out duration-500">
               Shop Now
             </button>
@@ -24,7 +24,7 @@ const Banner = () => {
           </div>
           </div>
 
-          <div className="w-64 md:w-96 h-full overflow-hidden ">
+          <div className="w-64 md:w-96 h-full mr-0 md:mr-48 mt-16 md:mt-0 overflow-hidden ">
             <Image
               className="object-cover"
               src="/gamingCartoon.png"
